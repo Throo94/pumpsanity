@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "495428594279",
+    "project_id": "pumpsanitytest",
+    "storage_bucket": "pumpsanitytest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495428594279:android:9088d28c1db4d32863c2c2",
+        "android_client_info": {
+          "package_name": "com.jakubprymus.pumpsanity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "495428594279-o75fq658ksdl3fva46240haakbom6ij4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEb4zbpK6CWepDESSXQCiJkh_mzoGYReU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "495428594279-o75fq658ksdl3fva46240haakbom6ij4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
