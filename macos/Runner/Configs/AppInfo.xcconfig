@@ -8,7 +8,7 @@
 PRODUCT_NAME = pumpsanity
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.example.pumpsanity
+PRODUCT_BUNDLE_IDENTIFIER = com.jakubprymus.pumpsanity
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2022 com.example. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2022 com.jakubprymus. All rights reserved.

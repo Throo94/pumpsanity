@@ -1,4 +1,4 @@
-package com.example.pumpsanity
+package com.jakubprymus.pumpsanity
 
 import io.flutter.embedding.android.FlutterActivity
 
