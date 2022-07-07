@@ -67,17 +67,28 @@ class HomePage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(10, 50, 50, 10),
+            padding: const EdgeInsets.fromLTRB(10, 10, 50, 10),
             child: IconButton(
               icon: Image.asset('images/fbicon.png'),
-              iconSize: 50,
+              iconSize: 60,
               onPressed: () {
-                final sanityranking =
+                final sanityfb =
                     Uri.parse("https://www.facebook.com/StepPrimeOfficial");
-                launchUrl(sanityranking);
+                launchUrl(sanityfb);
               },
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(10, 10, 50, 10),
+            child: IconButton(
+              icon: Image.asset('images/discordicon.png'),
+              iconSize: 60,
+              onPressed: () {
+                final sanitydiscord = Uri.parse("https://discord.gg/HKeE8Rkg");
+                launchUrl(sanitydiscord);
+              },
+            ),
+          )
         ],
       ),
     );
