@@ -37,6 +37,9 @@ dependencies:
   google_fonts: ^3.0.1
   url_launcher: ^6.1.4
   firebase_core: ^1.19.1
+  firebase_auth: ^3.4.1
+  flutterfire_ui: ^0.4.2+2
+  cloud_firestore: ^3.2.1
 
 dev_dependencies:
   flutter_test:

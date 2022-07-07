@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:pumpsanity/features/auth/user_profile.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatelessWidget {
@@ -12,8 +13,19 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Home Page'),
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const UserProfile(),
+                  ),
+                );
+              },
+              icon: const Icon(Icons.person))
+        ],
       ),
-      body: ListView(
+      body: Column(
         children: [
           const SizedBox(
             height: 200,
@@ -42,13 +54,30 @@ class HomePage extends StatelessWidget {
                     fontSize: 20,
                     color: Colors.purple,
                   ))),
-          ElevatedButton(
+          Padding(
+            padding: const EdgeInsets.fromLTRB(10, 10, 50, 10),
+            child: IconButton(
+              icon: Image.asset('images/rankingicon.png'),
+              iconSize: 60,
               onPressed: () {
                 final sanityranking =
                     Uri.parse("https://pumpsanity.net/scoring.php");
                 launchUrl(sanityranking);
               },
-              child: const Text('Ranking'))
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(10, 50, 50, 10),
+            child: IconButton(
+              icon: Image.asset('images/fbicon.png'),
+              iconSize: 50,
+              onPressed: () {
+                final sanityranking =
+                    Uri.parse("https://www.facebook.com/StepPrimeOfficial");
+                launchUrl(sanityranking);
+              },
+            ),
+          ),
         ],
       ),
     );
