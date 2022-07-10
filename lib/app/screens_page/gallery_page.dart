@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class GalleryPage extends StatefulWidget {
+class GalleryPage extends StatelessWidget {
   const GalleryPage(
     this.heroTag,
     this.image, {
@@ -11,16 +11,11 @@ class GalleryPage extends StatefulWidget {
   final AssetImage image;
 
   @override
-  State<GalleryPage> createState() => _GalleryPageState();
-}
-
-class _GalleryPageState extends State<GalleryPage> {
-  @override
   Widget build(BuildContext context) {
     return Hero(
-      tag: widget.heroTag,
+      tag: heroTag,
       child: Image(
-        image: widget.image,
+        image: image,
       ),
     );
   }

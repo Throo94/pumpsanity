@@ -2,16 +2,11 @@ import 'package:flutter/material.dart';
 
 import 'gallery_page.dart';
 
-class ScreensPage extends StatefulWidget {
+class ScreensPage extends StatelessWidget {
   const ScreensPage({
     Key? key,
   }) : super(key: key);
 
-  @override
-  State<ScreensPage> createState() => _ScreensPageState();
-}
-
-class _ScreensPageState extends State<ScreensPage> {
   @override
   Widget build(BuildContext context) {
     return GridView.count(
