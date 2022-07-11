@@ -54,7 +54,7 @@ class _LayoutPageState extends State<LayoutPage> {
                 color: Colors.blue,
               ),
               child: Text(
-                'Drawer Header',
+                'Manual',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 24,
