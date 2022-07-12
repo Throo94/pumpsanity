@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pumpsanity/app/Contact_page/Contact_page.dart';
 import 'package:pumpsanity/features/auth/user_profile.dart';
 
-import '../../drawer/drawer.dart';
+import '../drawer/drawer.dart';
 import '../home_page/home_page.dart';
 import '../screens_page/screens_page.dart';
 
@@ -46,7 +46,7 @@ class _LayoutPageState extends State<LayoutPage> {
           )
         ],
       ),
-      drawer: const NavigationDrawer(),
+      drawer: const SafeArea(child: NavigationDrawer()),
       body: Builder(
         builder: (context) {
           if (currentIndex == 0) {
