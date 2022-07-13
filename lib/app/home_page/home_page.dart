@@ -206,7 +206,7 @@ class HomePage extends StatelessWidget {
               ),
               TextSpan(
                 text:
-                    " Format compatibility:\n .SSC, .UCS, .SMA, .SM, .KSF, .BMS, DWI: Kilgamayan",
+                    " Format compatibility:\n .SSC, .SSC.EXT, .UCS, .SMA, .SM, .KSF, .BMS, .DWI",
               )
             ],
           ),
