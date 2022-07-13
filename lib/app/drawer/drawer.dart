@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../manual/Introduction/requirements.dart';
 
@@ -604,6 +606,33 @@ class NavigationDrawer extends StatelessWidget {
                 onTap: () {},
               ),
             ],
+          ),
+          const Divider(color: Colors.white),
+          const SizedBox(
+            height: 7,
+          ),
+          GestureDetector(
+            child: SizedBox(
+                width: 250,
+                height: 35,
+                child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Card(
+                        child: Center(
+                      child: Text(
+                        'SCORING',
+                        style: GoogleFonts.lato(
+                            color: Colors.red, fontWeight: FontWeight.bold),
+                      ),
+                    )))),
+            onTap: () {
+              final sanityranking =
+                  Uri.parse("https://pumpsanity.net/scoring.php");
+              launchUrl(sanityranking);
+            },
           ),
         ],
       );

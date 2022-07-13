@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({
@@ -38,42 +37,185 @@ class HomePage extends StatelessWidget {
                   fontSize: 20,
                   color: Colors.purple,
                 ))),
-        Padding(
-          padding: const EdgeInsets.fromLTRB(10, 10, 50, 10),
-          child: IconButton(
-            icon: Image.asset('images/rankingicon.png'),
-            iconSize: 60,
-            onPressed: () {
-              final sanityranking =
-                  Uri.parse("https://pumpsanity.net/scoring.php");
-              launchUrl(sanityranking);
-            },
+        const SizedBox(
+          height: 30.0,
+        ),
+        Center(
+            child: Text(
+                "Based on SM5 PumpSanity can emulates almost every feature from the original game, including quest and mission modes.\nSome of the features PumpSanity has are:",
+                style: GoogleFonts.lato(
+                  fontSize: 17,
+                ))),
+        const SizedBox(
+          height: 30.0,
+        ),
+        const Text.rich(
+          TextSpan(
+            style: TextStyle(
+              fontSize: 17,
+            ),
+            children: [
+              WidgetSpan(
+                child: Icon(Icons.check_circle_outline, color: Colors.purple),
+              ),
+              TextSpan(
+                text: ' Accurate timing near to the actual engine.',
+              )
+            ],
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.fromLTRB(10, 10, 50, 10),
-          child: IconButton(
-            icon: Image.asset('images/fbicon.png'),
-            iconSize: 60,
-            onPressed: () {
-              final sanityfb =
-                  Uri.parse("https://www.facebook.com/StepPrimeOfficial");
-              launchUrl(sanityfb);
-            },
+        const SizedBox(
+          height: 10.0,
+        ),
+        const Text.rich(
+          TextSpan(
+            style: TextStyle(
+              fontSize: 17,
+            ),
+            children: [
+              WidgetSpan(
+                child: Icon(Icons.check_circle_outline, color: Colors.purple),
+              ),
+              TextSpan(
+                text: ' Mission modes including WT, WM, QW and infinity.',
+              )
+            ],
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.fromLTRB(10, 10, 50, 10),
-          child: IconButton(
-            icon: Image.asset('images/discordicon.png'),
-            iconSize: 60,
-            onPressed: () {
-              final sanitydiscord = Uri.parse("https://discord.gg/HKeE8Rkg");
-              launchUrl(sanitydiscord);
-            },
+        const SizedBox(
+          height: 10.0,
+        ),
+        const Text.rich(
+          TextSpan(
+            style: TextStyle(
+              fontSize: 17,
+            ),
+            children: [
+              WidgetSpan(
+                child: Icon(Icons.check_circle_outline, color: Colors.purple),
+              ),
+              TextSpan(
+                text:
+                    ' 1/1 features from the actual engine like lifebar and scoring system.',
+              )
+            ],
           ),
-        )
+        ),
+        const SizedBox(
+          height: 10.0,
+        ),
+        const Text.rich(
+          TextSpan(
+            style: TextStyle(
+              fontSize: 17,
+            ),
+            children: [
+              WidgetSpan(
+                child: Icon(Icons.check_circle_outline, color: Colors.purple),
+              ),
+              TextSpan(
+                text: ' BGA reading from official Prex3 and earlier games.',
+              )
+            ],
+          ),
+        ),
+        const SizedBox(
+          height: 10.0,
+        ),
+        const Text.rich(
+          TextSpan(
+            style: TextStyle(
+              fontSize: 17,
+            ),
+            children: [
+              WidgetSpan(
+                child: Icon(Icons.check_circle_outline, color: Colors.purple),
+              ),
+              TextSpan(
+                text: ' Online matching support.',
+              )
+            ],
+          ),
+        ),
+        const SizedBox(
+          height: 10.0,
+        ),
+        const Text.rich(
+          TextSpan(
+            style: TextStyle(
+              fontSize: 17,
+            ),
+            children: [
+              WidgetSpan(
+                child: Icon(Icons.check_circle_outline, color: Colors.purple),
+              ),
+              TextSpan(
+                text:
+                    ' Every songs from oryginals PIU version (even hidden/unreleased)',
+              )
+            ],
+          ),
+        ),
+        const SizedBox(
+          height: 10.0,
+        ),
+        const Text.rich(
+          TextSpan(
+            style: TextStyle(
+              fontSize: 17,
+            ),
+            children: [
+              WidgetSpan(
+                child: Icon(Icons.check_circle_outline, color: Colors.purple),
+              ),
+              TextSpan(
+                text: ' Online ranking.',
+              )
+            ],
+          ),
+        ),
+        const SizedBox(
+          height: 10.0,
+        ),
+        const Text.rich(
+          TextSpan(
+            style: TextStyle(
+              fontSize: 17,
+            ),
+            children: [
+              WidgetSpan(
+                child: Icon(Icons.check_circle_outline, color: Colors.purple),
+              ),
+              TextSpan(
+                text: ' Multiple themes.',
+              )
+            ],
+          ),
+        ),
+        const SizedBox(
+          height: 10.0,
+        ),
+        const Text.rich(
+          TextSpan(
+            style: TextStyle(
+              fontSize: 17,
+            ),
+            children: [
+              WidgetSpan(
+                child: Icon(Icons.check_circle_outline, color: Colors.purple),
+              ),
+              TextSpan(
+                text:
+                    " Format compatibility:\n .SSC, .UCS, .SMA, .SM, .KSF, .BMS, DWI: Kilgamayan",
+              )
+            ],
+          ),
+        ),
       ],
     );
   }
 }
+
+
+
+//check_circle_outline
