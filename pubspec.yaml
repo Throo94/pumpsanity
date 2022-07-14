@@ -51,7 +51,7 @@ dev_dependencies:
 
 flutter_native_splash:
     background_image: images/black.png
-    image: images/icon.png
+    image: images/splash.png
 
 flutter_icons:
   android: true

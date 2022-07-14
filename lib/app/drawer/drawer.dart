@@ -107,6 +107,9 @@ class NavigationDrawer extends StatelessWidget {
                             child: Center(child: Text("Game Configuration"))))),
                 onTap: () {},
               ),
+              const SizedBox(
+                height: 7,
+              ),
             ],
           ),
           ExpansionTile(
@@ -338,6 +341,9 @@ class NavigationDrawer extends StatelessWidget {
                                 child: Text("WorldMax/QuestWorld/Infinity"))))),
                 onTap: () {},
               ),
+              const SizedBox(
+                height: 7,
+              ),
             ],
           ),
           ExpansionTile(
@@ -475,6 +481,9 @@ class NavigationDrawer extends StatelessWidget {
                             child: Center(child: Text("Search Song"))))),
                 onTap: () {},
               ),
+              const SizedBox(
+                height: 7,
+              ),
             ],
           ),
           ExpansionTile(
@@ -548,6 +557,9 @@ class NavigationDrawer extends StatelessWidget {
                             child: Center(child: Text("Editor tricks"))))),
                 onTap: () {},
               ),
+              const SizedBox(
+                height: 7,
+              ),
             ],
           ),
           ExpansionTile(
@@ -605,6 +617,9 @@ class NavigationDrawer extends StatelessWidget {
                         child: const Card(
                             child: Center(child: Text("Quest Goal"))))),
                 onTap: () {},
+              ),
+              const SizedBox(
+                height: 7,
               ),
             ],
           ),

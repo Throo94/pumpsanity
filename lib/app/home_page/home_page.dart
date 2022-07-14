@@ -38,184 +38,210 @@ class HomePage extends StatelessWidget {
                   color: Colors.purple,
                 ))),
         const SizedBox(
-          height: 30.0,
+          height: 10.0,
         ),
         Center(
-            child: Text(
-                "Based on SM5 PumpSanity can emulates almost every feature from the original game, including quest and mission modes.\nSome of the features PumpSanity has are:",
-                style: GoogleFonts.lato(
-                  fontSize: 17,
-                ))),
+            child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(
+              "Based on SM5 PumpSanity can emulates almost every feature from the original game.\nSome of the features PumpSanity has are:",
+              style: GoogleFonts.lato(
+                fontSize: 17,
+              )),
+        )),
         const SizedBox(
-          height: 30.0,
+          height: 10.0,
         ),
-        const Text.rich(
-          TextSpan(
-            style: TextStyle(
-              fontSize: 17,
-            ),
-            children: [
-              WidgetSpan(
-                child: Icon(Icons.check_circle_outline, color: Colors.purple),
+        const Padding(
+          padding: EdgeInsets.all(8.0),
+          child: Text.rich(
+            TextSpan(
+              style: TextStyle(
+                fontSize: 17,
               ),
-              TextSpan(
-                text: ' Accurate timing near to the actual engine.',
-              )
-            ],
+              children: [
+                WidgetSpan(
+                  child: Icon(Icons.check_circle_outline, color: Colors.purple),
+                ),
+                TextSpan(
+                  text: ' Accurate timing & holds like the actual engine.',
+                )
+              ],
+            ),
           ),
         ),
         const SizedBox(
           height: 10.0,
         ),
-        const Text.rich(
-          TextSpan(
-            style: TextStyle(
-              fontSize: 17,
-            ),
-            children: [
-              WidgetSpan(
-                child: Icon(Icons.check_circle_outline, color: Colors.purple),
+        const Padding(
+          padding: EdgeInsets.all(8.0),
+          child: Text.rich(
+            TextSpan(
+              style: TextStyle(
+                fontSize: 17,
               ),
-              TextSpan(
-                text: ' Mission modes including WT, WM, QW and infinity.',
-              )
-            ],
+              children: [
+                WidgetSpan(
+                  child: Icon(Icons.check_circle_outline, color: Colors.purple),
+                ),
+                TextSpan(
+                  text: ' Mission modes including WT, WM, QW and infinity.',
+                )
+              ],
+            ),
           ),
         ),
         const SizedBox(
           height: 10.0,
         ),
-        const Text.rich(
-          TextSpan(
-            style: TextStyle(
-              fontSize: 17,
-            ),
-            children: [
-              WidgetSpan(
-                child: Icon(Icons.check_circle_outline, color: Colors.purple),
+        const Padding(
+          padding: EdgeInsets.all(8.0),
+          child: Text.rich(
+            TextSpan(
+              style: TextStyle(
+                fontSize: 17,
               ),
-              TextSpan(
-                text:
-                    ' 1/1 features from the actual engine like lifebar and scoring system.',
-              )
-            ],
+              children: [
+                WidgetSpan(
+                  child: Icon(Icons.check_circle_outline, color: Colors.purple),
+                ),
+                TextSpan(
+                  text:
+                      ' 1/1 features from the actual engine like lifebar and scoring system.',
+                )
+              ],
+            ),
           ),
         ),
         const SizedBox(
           height: 10.0,
         ),
-        const Text.rich(
-          TextSpan(
-            style: TextStyle(
-              fontSize: 17,
-            ),
-            children: [
-              WidgetSpan(
-                child: Icon(Icons.check_circle_outline, color: Colors.purple),
+        const Padding(
+          padding: EdgeInsets.all(8.0),
+          child: Text.rich(
+            TextSpan(
+              style: TextStyle(
+                fontSize: 17,
               ),
-              TextSpan(
-                text: ' BGA reading from official Prex3 and earlier games.',
-              )
-            ],
+              children: [
+                WidgetSpan(
+                  child: Icon(Icons.check_circle_outline, color: Colors.purple),
+                ),
+                TextSpan(
+                  text: ' BGA reading from official Prex3 and earlier games.',
+                )
+              ],
+            ),
           ),
         ),
         const SizedBox(
           height: 10.0,
         ),
-        const Text.rich(
-          TextSpan(
-            style: TextStyle(
-              fontSize: 17,
-            ),
-            children: [
-              WidgetSpan(
-                child: Icon(Icons.check_circle_outline, color: Colors.purple),
+        const Padding(
+          padding: EdgeInsets.all(8.0),
+          child: Text.rich(
+            TextSpan(
+              style: TextStyle(
+                fontSize: 17,
               ),
-              TextSpan(
-                text: ' Online matching support.',
-              )
-            ],
+              children: [
+                WidgetSpan(
+                  child: Icon(Icons.check_circle_outline, color: Colors.purple),
+                ),
+                TextSpan(
+                  text: ' Online matching support.',
+                )
+              ],
+            ),
           ),
         ),
         const SizedBox(
           height: 10.0,
         ),
-        const Text.rich(
-          TextSpan(
-            style: TextStyle(
-              fontSize: 17,
-            ),
-            children: [
-              WidgetSpan(
-                child: Icon(Icons.check_circle_outline, color: Colors.purple),
+        const Padding(
+          padding: EdgeInsets.all(8.0),
+          child: Text.rich(
+            TextSpan(
+              style: TextStyle(
+                fontSize: 17,
               ),
-              TextSpan(
-                text:
-                    ' Every songs from oryginals PIU version (even hidden/unreleased)',
-              )
-            ],
+              children: [
+                WidgetSpan(
+                  child: Icon(Icons.check_circle_outline, color: Colors.purple),
+                ),
+                TextSpan(
+                  text:
+                      ' Every songs from oryginals PIU version (even hidden/unreleased)',
+                )
+              ],
+            ),
           ),
         ),
         const SizedBox(
           height: 10.0,
         ),
-        const Text.rich(
-          TextSpan(
-            style: TextStyle(
-              fontSize: 17,
-            ),
-            children: [
-              WidgetSpan(
-                child: Icon(Icons.check_circle_outline, color: Colors.purple),
+        const Padding(
+          padding: EdgeInsets.all(8.0),
+          child: Text.rich(
+            TextSpan(
+              style: TextStyle(
+                fontSize: 17,
               ),
-              TextSpan(
-                text: ' Online ranking.',
-              )
-            ],
+              children: [
+                WidgetSpan(
+                  child: Icon(Icons.check_circle_outline, color: Colors.purple),
+                ),
+                TextSpan(
+                  text: ' Online ranking.',
+                )
+              ],
+            ),
           ),
         ),
         const SizedBox(
           height: 10.0,
         ),
-        const Text.rich(
-          TextSpan(
-            style: TextStyle(
-              fontSize: 17,
-            ),
-            children: [
-              WidgetSpan(
-                child: Icon(Icons.check_circle_outline, color: Colors.purple),
+        const Padding(
+          padding: EdgeInsets.all(8.0),
+          child: Text.rich(
+            TextSpan(
+              style: TextStyle(
+                fontSize: 17,
               ),
-              TextSpan(
-                text: ' Multiple themes.',
-              )
-            ],
+              children: [
+                WidgetSpan(
+                  child: Icon(Icons.check_circle_outline, color: Colors.purple),
+                ),
+                TextSpan(
+                  text: ' Multiple themes.',
+                )
+              ],
+            ),
           ),
         ),
         const SizedBox(
           height: 10.0,
         ),
-        const Text.rich(
-          TextSpan(
-            style: TextStyle(
-              fontSize: 17,
-            ),
-            children: [
-              WidgetSpan(
-                child: Icon(Icons.check_circle_outline, color: Colors.purple),
+        const Padding(
+          padding: EdgeInsets.all(8.0),
+          child: Text.rich(
+            TextSpan(
+              style: TextStyle(
+                fontSize: 17,
               ),
-              TextSpan(
-                text:
-                    " Format compatibility:\n .SSC, .SSC.EXT, .UCS, .SMA, .SM, .KSF, .BMS, .DWI",
-              )
-            ],
+              children: [
+                WidgetSpan(
+                  child: Icon(Icons.check_circle_outline, color: Colors.purple),
+                ),
+                TextSpan(
+                  text:
+                      " Format compatibility:\n .SSC, .SSC.EXT, .UCS, .SMA, .SM, .KSF, .BMS and .DWI",
+                )
+              ],
+            ),
           ),
         ),
       ],
     );
   }
 }
-
-
-
-//check_circle_outline

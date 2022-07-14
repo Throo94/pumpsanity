@@ -19,17 +19,26 @@ class _QuizScreenState extends State<QuizScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('PUMPSANITY QUIZ'),
+        title: const Text('PumpSanity Quiz'),
       ),
       body: Container(
         margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 32),
         child:
             Column(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-          const Text(
-            "PumpSanity Quiz",
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 24,
+          Container(
+            alignment: Alignment.center,
+            width: double.infinity,
+            padding: const EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              color: Colors.grey,
+              borderRadius: BorderRadius.circular(16),
+            ),
+            child: const Text(
+              "Easy quiz about PumpSanity",
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 24,
+              ),
             ),
           ),
           _questionWidget(),
