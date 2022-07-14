@@ -29,7 +29,9 @@ class NavigationDrawer extends StatelessWidget {
         child: Column(
           children: const [
             Image(
-              image: AssetImage('images/icon.png'),
+              image: AssetImage('images/sanitadoc.png'),
+              width: 200,
+              height: 200,
             ),
           ],
         ),

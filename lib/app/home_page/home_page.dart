@@ -171,7 +171,7 @@ class HomePage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ' Every songs from oryginals PIU version (even hidden/unreleased)',
+                      ' Every songs from oryginals PIU version (even hidden/unreleased).',
                 )
               ],
             ),
