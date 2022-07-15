@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:pumpsanity/app/manual/Introduction/game_configuration.dart';
+import 'package:pumpsanity/app/manual/Introduction/how_to_install.dart';
+import 'package:pumpsanity/app/manual/Introduction/stepf2_conversion.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../features/quiz/quiz_screen.dart';
@@ -75,7 +78,13 @@ class NavigationDrawer extends StatelessWidget {
                         ),
                         child: const Card(
                             child: Center(child: Text("How to Install"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const HowToInstall(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,
@@ -91,7 +100,13 @@ class NavigationDrawer extends StatelessWidget {
                         ),
                         child: const Card(
                             child: Center(child: Text("StepF2 Conversion"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const StepF2Conversion(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,
@@ -107,7 +122,13 @@ class NavigationDrawer extends StatelessWidget {
                         ),
                         child: const Card(
                             child: Center(child: Text("Game Configuration"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const GameConfiguration(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,

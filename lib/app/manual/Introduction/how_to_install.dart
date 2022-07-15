@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Requirements extends StatelessWidget {
-  const Requirements({Key? key}) : super(key: key);
+class HowToInstall extends StatelessWidget {
+  const HowToInstall({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Requirements'),
+        title: const Text('How to install'),
       ),
       body: ListView(
         children: [
@@ -24,7 +24,7 @@ class Requirements extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  "Requirements",
+                  "How to install",
                   style: GoogleFonts.lato(
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
@@ -52,14 +52,8 @@ class Requirements extends StatelessWidget {
                     ),
                   ),
                   TextSpan(
-                    text: 'Operative System: ',
-                    style: TextStyle(
-                        color: Colors.orange, fontWeight: FontWeight.bold),
+                    text: 'Unzip/UnRar Game',
                   ),
-                  TextSpan(
-                    text:
-                        'Operative System: Windows 11, Windows 10, Windows 8.1, Windows 7 Service Pack 1.',
-                  )
                 ],
               ),
             ),
@@ -82,13 +76,8 @@ class Requirements extends StatelessWidget {
                       ),
                     ),
                     TextSpan(
-                      text: 'RAM: ',
-                      style: TextStyle(
-                          color: Colors.orange, fontWeight: FontWeight.bold),
+                      text: 'Run the executable located in Program32/Program64',
                     ),
-                    TextSpan(
-                      text: '2GB or above',
-                    )
                   ],
                 ),
               ),
@@ -112,43 +101,9 @@ class Requirements extends StatelessWidget {
                       ),
                     ),
                     TextSpan(
-                      text: 'Graphic Card: ',
-                      style: TextStyle(
-                          color: Colors.orange, fontWeight: FontWeight.bold),
+                      text:
+                          'Add Song groups to /Songs/ Folder or put the SongPack Zip File into /SongPackages/',
                     ),
-                    TextSpan(
-                      text: 'Any video Card 1 GB VRAM or Above.',
-                    )
-                  ],
-                ),
-              ),
-            ),
-          ),
-          const Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Align(
-              alignment: Alignment.centerLeft,
-              child: Text.rich(
-                TextSpan(
-                  style: TextStyle(
-                    fontSize: 17,
-                  ),
-                  children: [
-                    WidgetSpan(
-                      child: Icon(
-                        Icons.noise_control_off,
-                        color: Colors.purple,
-                        size: 20,
-                      ),
-                    ),
-                    TextSpan(
-                      text: 'CPU: ',
-                      style: TextStyle(
-                          color: Colors.orange, fontWeight: FontWeight.bold),
-                    ),
-                    TextSpan(
-                      text: 'Any Processor 2.4 GHz or Above.',
-                    )
                   ],
                 ),
               ),
@@ -173,35 +128,6 @@ class Requirements extends StatelessWidget {
                     ),
                     TextSpan(
                       text: 'DirectX Jun 2010 Redistributable',
-                      style: TextStyle(
-                          color: Colors.orange, fontWeight: FontWeight.bold),
-                    )
-                  ],
-                ),
-              ),
-            ),
-          ),
-          const Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Align(
-              alignment: Alignment.centerLeft,
-              child: Text.rich(
-                TextSpan(
-                  style: TextStyle(
-                    fontSize: 17,
-                  ),
-                  children: [
-                    WidgetSpan(
-                      child: Icon(
-                        Icons.noise_control_off,
-                        color: Colors.purple,
-                        size: 20,
-                      ),
-                    ),
-                    TextSpan(
-                      text: 'Visual C++ Redistributable',
-                      style: TextStyle(
-                          color: Colors.orange, fontWeight: FontWeight.bold),
                     )
                   ],
                 ),
@@ -213,7 +139,7 @@ class Requirements extends StatelessWidget {
           ),
           Container(
             decoration: BoxDecoration(
-              color: Colors.yellow,
+              color: Colors.blue,
               borderRadius: BorderRadius.circular(20),
             ),
             child: Padding(
@@ -222,30 +148,15 @@ class Requirements extends StatelessWidget {
                 alignment: Alignment.centerLeft,
                 child: Text.rich(
                   TextSpan(
-                    style: const TextStyle(
-                      fontSize: 17,
-                    ),
                     children: [
-                      const WidgetSpan(
-                        child: Icon(
-                          Icons.volume_down_alt,
+                      TextSpan(
+                        text:
+                            "Extract the base game in valid partition or a path.\nDon't extract the game in folders that you don't have enough permissions, for example: Partition C or Program Files",
+                        style: GoogleFonts.roboto(
+                          fontSize: 16,
                           color: Colors.black,
-                          size: 25,
                         ),
                       ),
-                      TextSpan(
-                        text: 'Important Notice about Windows 7\n',
-                        style: GoogleFonts.roboto(
-                            fontSize: 20,
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold),
-                      ),
-                      TextSpan(
-                          text:
-                              'Windows 7 is not longer supported. You need to get the Service Pack 1 in order to execute the game.',
-                          style: GoogleFonts.roboto(
-                            color: Colors.black,
-                          ))
                     ],
                   ),
                 ),

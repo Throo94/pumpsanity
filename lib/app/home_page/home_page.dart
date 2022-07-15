@@ -61,7 +61,11 @@ class HomePage extends StatelessWidget {
               ),
               children: [
                 WidgetSpan(
-                  child: Icon(Icons.check_circle_outline, color: Colors.purple),
+                  child: Icon(
+                    Icons.check_circle_outline,
+                    color: Colors.purple,
+                    size: 20,
+                  ),
                 ),
                 TextSpan(
                   text: ' Accurate timing & holds like the actual engine.',
@@ -82,7 +86,11 @@ class HomePage extends StatelessWidget {
               ),
               children: [
                 WidgetSpan(
-                  child: Icon(Icons.check_circle_outline, color: Colors.purple),
+                  child: Icon(
+                    Icons.check_circle_outline,
+                    color: Colors.purple,
+                    size: 20,
+                  ),
                 ),
                 TextSpan(
                   text: ' Mission modes including WT, WM, QW and infinity.',
@@ -103,7 +111,11 @@ class HomePage extends StatelessWidget {
               ),
               children: [
                 WidgetSpan(
-                  child: Icon(Icons.check_circle_outline, color: Colors.purple),
+                  child: Icon(
+                    Icons.check_circle_outline,
+                    color: Colors.purple,
+                    size: 20,
+                  ),
                 ),
                 TextSpan(
                   text:
@@ -125,7 +137,11 @@ class HomePage extends StatelessWidget {
               ),
               children: [
                 WidgetSpan(
-                  child: Icon(Icons.check_circle_outline, color: Colors.purple),
+                  child: Icon(
+                    Icons.check_circle_outline,
+                    color: Colors.purple,
+                    size: 20,
+                  ),
                 ),
                 TextSpan(
                   text: ' BGA reading from official Prex3 and earlier games.',
@@ -146,7 +162,11 @@ class HomePage extends StatelessWidget {
               ),
               children: [
                 WidgetSpan(
-                  child: Icon(Icons.check_circle_outline, color: Colors.purple),
+                  child: Icon(
+                    Icons.check_circle_outline,
+                    color: Colors.purple,
+                    size: 20,
+                  ),
                 ),
                 TextSpan(
                   text: ' Online matching support.',
@@ -167,7 +187,11 @@ class HomePage extends StatelessWidget {
               ),
               children: [
                 WidgetSpan(
-                  child: Icon(Icons.check_circle_outline, color: Colors.purple),
+                  child: Icon(
+                    Icons.check_circle_outline,
+                    color: Colors.purple,
+                    size: 20,
+                  ),
                 ),
                 TextSpan(
                   text:
@@ -189,7 +213,11 @@ class HomePage extends StatelessWidget {
               ),
               children: [
                 WidgetSpan(
-                  child: Icon(Icons.check_circle_outline, color: Colors.purple),
+                  child: Icon(
+                    Icons.check_circle_outline,
+                    color: Colors.purple,
+                    size: 20,
+                  ),
                 ),
                 TextSpan(
                   text: ' Online ranking.',
@@ -210,7 +238,11 @@ class HomePage extends StatelessWidget {
               ),
               children: [
                 WidgetSpan(
-                  child: Icon(Icons.check_circle_outline, color: Colors.purple),
+                  child: Icon(
+                    Icons.check_circle_outline,
+                    color: Colors.purple,
+                    size: 20,
+                  ),
                 ),
                 TextSpan(
                   text: ' Multiple themes.',
@@ -231,7 +263,11 @@ class HomePage extends StatelessWidget {
               ),
               children: [
                 WidgetSpan(
-                  child: Icon(Icons.check_circle_outline, color: Colors.purple),
+                  child: Icon(
+                    Icons.check_circle_outline,
+                    color: Colors.purple,
+                    size: 20,
+                  ),
                 ),
                 TextSpan(
                   text:
