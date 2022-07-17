@@ -1,11 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:pumpsanity/app/manual/Frequently_Asked_Questions/NOBGA.dart';
+import 'package:pumpsanity/app/manual/Frequently_Asked_Questions/bga_songmovies.dart';
+import 'package:pumpsanity/app/manual/Frequently_Asked_Questions/command_window.dart';
+import 'package:pumpsanity/app/manual/Frequently_Asked_Questions/event_mode.dart';
+import 'package:pumpsanity/app/manual/Frequently_Asked_Questions/external_group_folders.dart';
+import 'package:pumpsanity/app/manual/Frequently_Asked_Questions/full_mode_basic_mode.dart';
+import 'package:pumpsanity/app/manual/Frequently_Asked_Questions/group_folders.dart';
+import 'package:pumpsanity/app/manual/Frequently_Asked_Questions/high_resolution.dart';
+import 'package:pumpsanity/app/manual/Frequently_Asked_Questions/key_mapping.dart';
+import 'package:pumpsanity/app/manual/Frequently_Asked_Questions/profiles.dart';
+import 'package:pumpsanity/app/manual/Frequently_Asked_Questions/search_song.dart';
+import 'package:pumpsanity/app/manual/Frequently_Asked_Questions/world_max_quest_zone_infinity.dart';
+import 'package:pumpsanity/app/manual/Frequently_Asked_Questions/zip_songpackages.dart';
 import 'package:pumpsanity/app/manual/Introduction/game_configuration.dart';
 import 'package:pumpsanity/app/manual/Introduction/how_to_install.dart';
 import 'package:pumpsanity/app/manual/Introduction/stepf2_conversion.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../features/quiz/quiz_screen.dart';
+import '../manual/Frequently_Asked_Questions/installing_songs.dart';
 import '../manual/Introduction/requirements.dart';
 
 class NavigationDrawer extends StatelessWidget {
@@ -150,7 +164,13 @@ class NavigationDrawer extends StatelessWidget {
                         ),
                         child: const Card(
                             child: Center(child: Text("Installing Songs"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const InstallingSongs(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,
@@ -166,7 +186,13 @@ class NavigationDrawer extends StatelessWidget {
                         ),
                         child: const Card(
                             child: Center(child: Text("Group Folders"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const GroupFolders(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,
@@ -182,7 +208,13 @@ class NavigationDrawer extends StatelessWidget {
                         ),
                         child: const Card(
                             child: Center(child: Text("High Resolution"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const HighResolution(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,
@@ -198,7 +230,13 @@ class NavigationDrawer extends StatelessWidget {
                         ),
                         child: const Card(
                             child: Center(child: Text("Profiles"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const Profiles(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,
@@ -214,7 +252,13 @@ class NavigationDrawer extends StatelessWidget {
                         ),
                         child: const Card(
                             child: Center(child: Text("Event Mode"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const EventMode(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,
@@ -230,7 +274,13 @@ class NavigationDrawer extends StatelessWidget {
                         ),
                         child: const Card(
                             child: Center(child: Text("Search Song"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const SearchSong(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,
@@ -247,7 +297,13 @@ class NavigationDrawer extends StatelessWidget {
                         child: const Card(
                             child: Center(
                                 child: Text("External Group Folders"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const ExternalGroupFolders(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,
@@ -263,7 +319,13 @@ class NavigationDrawer extends StatelessWidget {
                         ),
                         child: const Card(
                             child: Center(child: Text("ZIP SongPackages"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const ZipSongPackages(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,
@@ -279,7 +341,13 @@ class NavigationDrawer extends StatelessWidget {
                         ),
                         child: const Card(
                             child: Center(child: Text("BGA/SongsMovies"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const BGASongMovies(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,
@@ -296,7 +364,13 @@ class NavigationDrawer extends StatelessWidget {
                         child: const Card(
                             child: Center(
                                 child: Text("NOBGA (Oryginals BGAs)"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const NOBGA(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,
@@ -312,7 +386,13 @@ class NavigationDrawer extends StatelessWidget {
                         ),
                         child: const Card(
                             child: Center(child: Text("Key Mapping"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const KeyMapping(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,
@@ -329,7 +409,13 @@ class NavigationDrawer extends StatelessWidget {
                         child: const Card(
                             child:
                                 Center(child: Text("Full Mode/Basic Mode"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const FullModeBasicMode(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,
@@ -345,7 +431,13 @@ class NavigationDrawer extends StatelessWidget {
                         ),
                         child: const Card(
                             child: Center(child: Text("Command Window"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const CommandWindow(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,
@@ -362,7 +454,13 @@ class NavigationDrawer extends StatelessWidget {
                         child: const Card(
                             child: Center(
                                 child: Text("WorldMax/QuestWorld/Infinity"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const WorldMaxQuestZoneInfnity(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,

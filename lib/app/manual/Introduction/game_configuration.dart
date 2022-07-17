@@ -85,8 +85,18 @@ class GameConfiguration extends StatelessWidget {
                     ),
                   ),
                   const TextSpan(
+                    text: ' to open',
+                  ),
+                  TextSpan(
+                    text: ' PumpSanity Configuration',
+                    style: GoogleFonts.roboto(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.orange,
+                    ),
+                  ),
+                  const TextSpan(
                     text:
-                        ' to open PumpSanity Configuration: Use this section to edit almost every option in this game.',
+                        ' :Use this section to edit almost every option in this game.',
                   ),
                 ],
               ),
@@ -237,7 +247,7 @@ class GameConfiguration extends StatelessWidget {
                     text: '1. Create a new profile to save your stats. Go into',
                   ),
                   TextSpan(
-                    text: ' PumpSanity configuration > Profiles > Create New.',
+                    text: ' PumpSanity Configuration > Profiles > Create New.',
                     style: GoogleFonts.roboto(
                       fontWeight: FontWeight.bold,
                       color: Colors.orange,
@@ -346,10 +356,10 @@ class GameConfiguration extends StatelessWidget {
                     ),
                   ),
                   const TextSpan(
-                    text: 'Go into PumpSanity configuration >',
+                    text: 'Go into',
                   ),
                   TextSpan(
-                    text: ' Calibration/Sync.',
+                    text: '  PumpSanity Configuration > Calibration/Sync.',
                     style: GoogleFonts.roboto(
                       fontWeight: FontWeight.bold,
                       color: Colors.orange,
@@ -425,8 +435,14 @@ class GameConfiguration extends StatelessWidget {
                     ),
                   ),
                   const TextSpan(
-                    text:
-                        ' will delete every option that you changed from PumpSanity Configuration.',
+                    text: ' will delete every option that you changed from',
+                  ),
+                  TextSpan(
+                    text: '  PumpSanity Configuration',
+                    style: GoogleFonts.roboto(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.orange,
+                    ),
                   ),
                 ],
               ),
