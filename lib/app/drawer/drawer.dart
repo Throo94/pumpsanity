@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:pumpsanity/app/manual/Frequently_Asked_Questions/NOBGA.dart';
+import 'package:pumpsanity/app/manual/Features/custom_music_train.dart';
+import 'package:pumpsanity/app/manual/Features/favorites_channel.dart';
+import 'package:pumpsanity/app/manual/Features/file_compatibility.dart';
+import 'package:pumpsanity/app/manual/Features/piuio_support.dart';
+import 'package:pumpsanity/app/manual/Features/ssc_ext_files.dart';
+import 'package:pumpsanity/app/manual/Features/ucs_support.dart';
+import 'package:pumpsanity/app/manual/Frequently_Asked_Questions/nobga.dart';
 import 'package:pumpsanity/app/manual/Frequently_Asked_Questions/bga_songmovies.dart';
 import 'package:pumpsanity/app/manual/Frequently_Asked_Questions/command_window.dart';
 import 'package:pumpsanity/app/manual/Frequently_Asked_Questions/event_mode.dart';
@@ -19,8 +25,11 @@ import 'package:pumpsanity/app/manual/Introduction/stepf2_conversion.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../features/quiz/quiz_screen.dart';
+import '../manual/Features/custom_sort.dart';
+import '../manual/Features/search_song.dart';
 import '../manual/Frequently_Asked_Questions/installing_songs.dart';
 import '../manual/Introduction/requirements.dart';
+import '../patchnotes_pages/layout_patchnotes.dart';
 
 class NavigationDrawer extends StatelessWidget {
   const NavigationDrawer({Key? key}) : super(key: key);
@@ -485,7 +494,7 @@ class NavigationDrawer extends StatelessWidget {
                 onTap: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (_) => const Requirements(),
+                      builder: (_) => const FileCompatibility(),
                     ),
                   );
                 },
@@ -504,7 +513,13 @@ class NavigationDrawer extends StatelessWidget {
                         ),
                         child: const Card(
                             child: Center(child: Text(".ssc.ext Files"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const SscExtFiles(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,
@@ -520,7 +535,13 @@ class NavigationDrawer extends StatelessWidget {
                         ),
                         child: const Card(
                             child: Center(child: Text("UCS Support"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const UcsSupport(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,
@@ -536,7 +557,13 @@ class NavigationDrawer extends StatelessWidget {
                         ),
                         child: const Card(
                             child: Center(child: Text("PIUIO support"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const PiuioSupport(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,
@@ -552,7 +579,13 @@ class NavigationDrawer extends StatelessWidget {
                         ),
                         child: const Card(
                             child: Center(child: Text("Custom Music Train"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const CustomMusicTrain(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,
@@ -568,7 +601,13 @@ class NavigationDrawer extends StatelessWidget {
                         ),
                         child: const Card(
                             child: Center(child: Text("Custom Sort"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const CustomSort(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,
@@ -584,7 +623,13 @@ class NavigationDrawer extends StatelessWidget {
                         ),
                         child: const Card(
                             child: Center(child: Text("Favorites Channel"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const FavoritesChannel(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,
@@ -600,7 +645,13 @@ class NavigationDrawer extends StatelessWidget {
                         ),
                         child: const Card(
                             child: Center(child: Text("Search Song"))))),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const SearchSongs(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(
                 height: 7,
@@ -795,6 +846,34 @@ class NavigationDrawer extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (_) => const QuizScreen(),
+                ),
+              );
+            },
+          ),
+          const SizedBox(
+            height: 10.0,
+          ),
+          GestureDetector(
+            child: SizedBox(
+                width: 250,
+                height: 35,
+                child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.green,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Card(
+                        child: Center(
+                      child: Text(
+                        'PATCH NOTES',
+                        style: GoogleFonts.lato(
+                            color: Colors.green, fontWeight: FontWeight.bold),
+                      ),
+                    )))),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => const LayoutPatchNotes(),
                 ),
               );
             },

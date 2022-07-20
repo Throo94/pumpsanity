@@ -89,7 +89,7 @@ class GroupFolders extends StatelessWidget {
             height: 25,
           ),
           const Image(
-            image: AssetImage('images/groupfolders1.jpg'),
+            image: AssetImage('images/groupfolders2.jpg'),
           ),
           const SizedBox(
             height: 25,
