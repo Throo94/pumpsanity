@@ -64,15 +64,15 @@ class _LayoutPageState extends State<LayoutPatchNotes> {
         },
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
+            icon: Icon(Icons.memory),
             label: 'Engine',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.image),
+            icon: Icon(Icons.emoji_flags),
             label: 'Missions',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.mail),
+            icon: Icon(Icons.music_note),
             label: 'Songs',
           ),
         ],

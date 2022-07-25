@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../screens_page/gallery_image.dart';
+
 class KeyMapping extends StatelessWidget {
   const KeyMapping({Key? key}) : super(key: key);
 
@@ -8,7 +10,7 @@ class KeyMapping extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Key Mapping)'),
+        title: const Text('Key Mapping'),
       ),
       body: ListView(
         children: [
@@ -192,8 +194,9 @@ class KeyMapping extends StatelessWidget {
               ),
             ),
           ),
-          const Image(
-            image: AssetImage('images/keymapping.jpg'),
+          const GalleryImage(
+            'keymapping',
+            AssetImage('images/keymapping.jpg'),
           ),
         ],
       ),

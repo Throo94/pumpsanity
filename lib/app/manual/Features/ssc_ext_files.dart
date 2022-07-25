@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../screens_page/gallery_image.dart';
+
 class SscExtFiles extends StatelessWidget {
   const SscExtFiles({Key? key}) : super(key: key);
 
@@ -81,14 +83,16 @@ class SscExtFiles extends StatelessWidget {
           const SizedBox(
             height: 25,
           ),
-          const Image(
-            image: AssetImage('images/sscextfiles1.jpg'),
+          const GalleryImage(
+            'sscextfiles1',
+            AssetImage('images/sscextfiles1.jpg'),
           ),
           const SizedBox(
             height: 25,
           ),
-          const Image(
-            image: AssetImage('images/sscextfiles2.jpg'),
+          const GalleryImage(
+            'sscextfiles2',
+            AssetImage('images/sscextfiles2.jpg'),
           ),
         ],
       ),

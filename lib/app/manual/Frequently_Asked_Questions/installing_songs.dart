@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../screens_page/gallery_image.dart';
+
 class InstallingSongs extends StatelessWidget {
   const InstallingSongs({Key? key}) : super(key: key);
 
@@ -58,8 +60,9 @@ class InstallingSongs extends StatelessWidget {
           const SizedBox(
             height: 25,
           ),
-          const Image(
-            image: AssetImage('images/installingsongs.jpg'),
+          const GalleryImage(
+            'Installing Songs',
+            AssetImage('images/installingsongs.jpg'),
           ),
           const SizedBox(
             height: 25,

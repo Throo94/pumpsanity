@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../screens_page/gallery_image.dart';
+
 class FavoritesChannel extends StatelessWidget {
   const FavoritesChannel({Key? key}) : super(key: key);
 
@@ -75,8 +77,9 @@ class FavoritesChannel extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          const Image(
-            image: AssetImage('images/favorites.jpg'),
+          const GalleryImage(
+            'favorites',
+            AssetImage('images/favorites.jpg'),
           ),
           const SizedBox(
             height: 20,

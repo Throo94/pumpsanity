@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../screens_page/gallery_image.dart';
+
 class GroupFolders extends StatelessWidget {
   const GroupFolders({Key? key}) : super(key: key);
 
@@ -82,14 +84,16 @@ class GroupFolders extends StatelessWidget {
           const SizedBox(
             height: 25,
           ),
-          const Image(
-            image: AssetImage('images/groupfolders1.jpg'),
+          const GalleryImage(
+            'groupfolders1',
+            AssetImage('images/groupfolders1.jpg'),
           ),
           const SizedBox(
             height: 25,
           ),
-          const Image(
-            image: AssetImage('images/groupfolders2.jpg'),
+          const GalleryImage(
+            'groupfolders2',
+            AssetImage('images/groupfolders2.jpg'),
           ),
           const SizedBox(
             height: 25,

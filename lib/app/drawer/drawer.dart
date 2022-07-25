@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:pumpsanity/app/drawer/drawer_button.dart';
 import 'package:pumpsanity/app/manual/Features/custom_music_train.dart';
 import 'package:pumpsanity/app/manual/Features/favorites_channel.dart';
 import 'package:pumpsanity/app/manual/Features/file_compatibility.dart';
@@ -22,6 +23,8 @@ import 'package:pumpsanity/app/manual/Frequently_Asked_Questions/zip_songpackage
 import 'package:pumpsanity/app/manual/Introduction/game_configuration.dart';
 import 'package:pumpsanity/app/manual/Introduction/how_to_install.dart';
 import 'package:pumpsanity/app/manual/Introduction/stepf2_conversion.dart';
+import 'package:pumpsanity/app/manual/step_editor/key_shortcuts.dart';
+import 'package:pumpsanity/app/manual/step_editor/tap_note_types.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../features/quiz/quiz_screen.dart';
@@ -29,6 +32,7 @@ import '../manual/Features/custom_sort.dart';
 import '../manual/Features/search_song.dart';
 import '../manual/Frequently_Asked_Questions/installing_songs.dart';
 import '../manual/Introduction/requirements.dart';
+import '../manual/step_editor/general_editor.dart';
 import '../patchnotes_pages/layout_patchnotes.dart';
 
 class NavigationDrawer extends StatelessWidget {
@@ -68,91 +72,21 @@ class NavigationDrawer extends StatelessWidget {
             title: const Text('Introduction'),
             leading: const Icon(Icons.align_horizontal_center),
             children: <Widget>[
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("Requirements"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const Requirements(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton('Requirements', (_) => const Requirements()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("How to Install"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const HowToInstall(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton('How to Install', (_) => const HowToInstall()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("StepF2 Conversion"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const StepF2Conversion(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton(
+                  'StepF2 Conversion', (_) => const StepF2Conversion()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 40,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("Game Configuration"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const GameConfiguration(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton(
+                  'Game Configuration', (_) => const GameConfiguration()),
               const SizedBox(
                 height: 7,
               ),
@@ -162,315 +96,62 @@ class NavigationDrawer extends StatelessWidget {
             title: const Text('Frequently Asked Questions'),
             leading: const Icon(Icons.question_mark_rounded),
             children: <Widget>[
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("Installing Songs"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const InstallingSongs(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton('Installing Songs', (_) => const InstallingSongs()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("Group Folders"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const GroupFolders(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton('Group Folders', (_) => const GroupFolders()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("High Resolution"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const HighResolution(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton('High Resolution', (_) => const HighResolution()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 40,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("Profiles"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const Profiles(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton('Profiles', (_) => const Profiles()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("Event Mode"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const EventMode(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton('Event Mode', (_) => const EventMode()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("Search Song"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const SearchSong(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton('Search Song', (_) => const SearchSong()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(
-                                child: Text("External Group Folders"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const ExternalGroupFolders(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton('External Group Folders',
+                  (_) => const ExternalGroupFolders()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("ZIP SongPackages"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const ZipSongPackages(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton('ZIP SongPackages', (_) => const ZipSongPackages()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("BGA/SongsMovies"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const BGASongMovies(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton('BGA/SongsMovies', (_) => const BGASongMovies()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(
-                                child: Text("NOBGA (Oryginals BGAs)"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const NOBGA(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton('NOBGA (Oryginals BGAs)', (_) => const NOBGA()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("Key Mapping"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const KeyMapping(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton('Key Mapping', (_) => const KeyMapping()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child:
-                                Center(child: Text("Full Mode/Basic Mode"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const FullModeBasicMode(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton(
+                  'Full Mode/Basic Mode', (_) => const FullModeBasicMode()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("Command Window"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const CommandWindow(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton('Command Window', (_) => const CommandWindow()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(
-                                child: Text("WorldMax/QuestWorld/Infinity"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const WorldMaxQuestZoneInfnity(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton('WorldMax/QuestWorld/Infinity',
+                  (_) => const WorldMaxQuestZoneInfnity()),
               const SizedBox(
                 height: 7,
               ),
@@ -480,179 +161,38 @@ class NavigationDrawer extends StatelessWidget {
             title: const Text('Features'),
             leading: const Icon(Icons.settings_suggest_rounded),
             children: <Widget>[
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("File Compatibility"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const FileCompatibility(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton(
+                  'File Compatibility', (_) => const FileCompatibility()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text(".ssc.ext Files"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const SscExtFiles(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton('.ssc.ext Files', (_) => const SscExtFiles()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("UCS Support"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const UcsSupport(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton('UCS Support', (_) => const UcsSupport()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("PIUIO support"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const PiuioSupport(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton('PIUIO support', (_) => const PiuioSupport()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 40,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("Custom Music Train"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const CustomMusicTrain(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton(
+                  'Custom Music Train', (_) => const CustomMusicTrain()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 40,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("Custom Sort"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const CustomSort(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton('Custom Sort', (_) => const CustomSort()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 40,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("Favorites Channel"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const FavoritesChannel(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton(
+                  'Favorites Channel', (_) => const FavoritesChannel()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 40,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("Search Song"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const SearchSongs(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton('Search Song', (_) => const SearchSongs()),
               const SizedBox(
                 height: 7,
               ),
@@ -662,73 +202,23 @@ class NavigationDrawer extends StatelessWidget {
             title: const Text('Step Editor'),
             leading: const Icon(Icons.brush),
             children: <Widget>[
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("Key Shortcuts"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const Requirements(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton('General Editor', (_) => const GeneralEditor()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("Tap Note Types"))))),
-                onTap: () {},
-              ),
+              DrawerButton('Key Shortcuts', (_) => const KeyShortcuts()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("Division Mode"))))),
-                onTap: () {},
-              ),
+              DrawerButton('Tap Note Types', (_) => const TapNotesTypes()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 40,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("Editor tricks"))))),
-                onTap: () {},
+              DrawerButton('Division Mode', (_) => const GroupFolders()),
+              const SizedBox(
+                height: 7,
               ),
+              DrawerButton('Editor tricks', (_) => const GroupFolders()),
               const SizedBox(
                 height: 7,
               ),
@@ -738,58 +228,16 @@ class NavigationDrawer extends StatelessWidget {
             title: const Text('Quest Channel'),
             leading: const Icon(Icons.mode_standby),
             children: <Widget>[
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(
-                                child: Text("Create a Quest Channel"))))),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const Requirements(),
-                    ),
-                  );
-                },
-              ),
+              DrawerButton(
+                  'Create a Quest Channel', (_) => const GroupFolders()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("Quest Mods"))))),
-                onTap: () {},
-              ),
+              DrawerButton('Quest Mods', (_) => const GroupFolders()),
               const SizedBox(
                 height: 7,
               ),
-              GestureDetector(
-                child: SizedBox(
-                    width: 250,
-                    height: 35,
-                    child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black26,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Card(
-                            child: Center(child: Text("Quest Goal"))))),
-                onTap: () {},
-              ),
+              DrawerButton('Quest Goal', (_) => const GroupFolders()),
               const SizedBox(
                 height: 7,
               ),
@@ -817,9 +265,7 @@ class NavigationDrawer extends StatelessWidget {
                       ),
                     )))),
             onTap: () {
-              final sanityranking =
-                  Uri.parse("https://pumpsanity.net/scoring.php");
-              launchUrl(sanityranking);
+              launchUrl(Uri.parse("https://pumpsanity.net/scoring.php"));
             },
           ),
           const SizedBox(

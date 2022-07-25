@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../screens_page/gallery_image.dart';
+
 class WorldMaxQuestZoneInfnity extends StatelessWidget {
   const WorldMaxQuestZoneInfnity({Key? key}) : super(key: key);
 
@@ -79,14 +81,16 @@ class WorldMaxQuestZoneInfnity extends StatelessWidget {
           const SizedBox(
             height: 25,
           ),
-          const Image(
-            image: AssetImage('images/worldmaxquestworldinfinity1.jpg'),
+          const GalleryImage(
+            'worldmaxquestworldinfinity1',
+            AssetImage('images/worldmaxquestworldinfinity1.jpg'),
           ),
           const SizedBox(
             height: 25,
           ),
-          const Image(
-            image: AssetImage('images/worldmaxquestworldinfinity2.jpg'),
+          const GalleryImage(
+            'worldmaxquestworldinfinity2',
+            AssetImage('images/worldmaxquestworldinfinity2.jpg'),
           ),
         ],
       ),

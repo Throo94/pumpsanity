@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../screens_page/gallery_image.dart';
+
 class FullModeBasicMode extends StatelessWidget {
   const FullModeBasicMode({Key? key}) : super(key: key);
 
@@ -68,14 +70,16 @@ class FullModeBasicMode extends StatelessWidget {
           const SizedBox(
             height: 25,
           ),
-          const Image(
-            image: AssetImage('images/fullmodebasicmode1.jpg'),
+          const GalleryImage(
+            'fullmodebasicmode1',
+            AssetImage('images/fullmodebasicmode1.jpg'),
           ),
           const SizedBox(
             height: 25,
           ),
-          const Image(
-            image: AssetImage('images/fullmodebasicmode2.jpg'),
+          const GalleryImage(
+            'fullmodebasicmode2',
+            AssetImage('images/fullmodebasicmode2.jpg'),
           ),
         ],
       ),

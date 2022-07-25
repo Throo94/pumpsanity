@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../screens_page/gallery_image.dart';
+
 class CustomSort extends StatelessWidget {
   const CustomSort({Key? key}) : super(key: key);
 
@@ -84,8 +86,9 @@ class CustomSort extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          const Image(
-            image: AssetImage('images/customsort1.jpg'),
+          const GalleryImage(
+            'customsort1',
+            AssetImage('images/customsort1.jpg'),
           ),
           const SizedBox(
             height: 20,
@@ -180,8 +183,9 @@ class CustomSort extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          const Image(
-            image: AssetImage('images/customsort2.jpg'),
+          const GalleryImage(
+            'customsort2',
+            AssetImage('images/customsort2.jpg'),
           ),
           const SizedBox(
             height: 20,

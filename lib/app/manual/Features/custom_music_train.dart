@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../screens_page/gallery_image.dart';
+
 class CustomMusicTrain extends StatelessWidget {
   const CustomMusicTrain({Key? key}) : super(key: key);
 
@@ -342,8 +344,9 @@ class CustomMusicTrain extends StatelessWidget {
           const SizedBox(
             height: 25,
           ),
-          const Image(
-            image: AssetImage('images/custommusictrain1.jpg'),
+          const GalleryImage(
+            'custommusictrain1',
+            AssetImage('images/custommusictrain1.jpg'),
           ),
           const SizedBox(
             height: 25,
@@ -609,8 +612,9 @@ class CustomMusicTrain extends StatelessWidget {
           const SizedBox(
             height: 25,
           ),
-          const Image(
-            image: AssetImage('images/custommusictrain2.jpg'),
+          const GalleryImage(
+            'custommusictrain2',
+            AssetImage('images/custommusictrain2.jpg'),
           ),
           const SizedBox(
             height: 25,

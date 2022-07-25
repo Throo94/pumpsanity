@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../screens_page/gallery_image.dart';
+
 class ZipSongPackages extends StatelessWidget {
   const ZipSongPackages({Key? key}) : super(key: key);
 
@@ -68,8 +70,9 @@ class ZipSongPackages extends StatelessWidget {
           const SizedBox(
             height: 25,
           ),
-          const Image(
-            image: AssetImage('images/zipsongpackages.jpg'),
+          const GalleryImage(
+            'zipsongpackages',
+            AssetImage('images/zipsongpackages.jpg'),
           ),
           const SizedBox(
             height: 25,

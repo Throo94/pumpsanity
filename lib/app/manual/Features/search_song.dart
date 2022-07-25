@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../screens_page/gallery_image.dart';
+
 class SearchSongs extends StatelessWidget {
   const SearchSongs({Key? key}) : super(key: key);
 
@@ -73,8 +75,9 @@ class SearchSongs extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          const Image(
-            image: AssetImage('images/searchsong.png'),
+          const GalleryImage(
+            'searchsong',
+            AssetImage('images/searchsong.png'),
           ),
           const SizedBox(
             height: 20,

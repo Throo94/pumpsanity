@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../screens_page/gallery_image.dart';
+
 class PiuioSupport extends StatelessWidget {
   const PiuioSupport({Key? key}) : super(key: key);
 
@@ -222,8 +224,9 @@ class PiuioSupport extends StatelessWidget {
           const SizedBox(
             height: 25,
           ),
-          const Image(
-            image: AssetImage('images/piuiosupport.jpg'),
+          const GalleryImage(
+            'piuiosupport',
+            AssetImage('images/piuiosupport.jpg'),
           ),
           const SizedBox(
             height: 25,

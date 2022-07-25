@@ -59,7 +59,8 @@ class ContactPage extends StatelessWidget {
               icon: Image.asset('images/discordicon.png'),
               iconSize: 60,
               onPressed: () {
-                final sanitydiscord = Uri.parse("https://discord.gg/HKeE8Rkg");
+                final sanitydiscord =
+                    Uri.parse("https://discord.com/invite/mD9begwep4");
                 launchUrl(sanitydiscord);
               },
             ),
