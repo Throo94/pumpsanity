@@ -10,7 +10,7 @@ class PiuioSupport extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('UCS Support'),
+        title: const Text('PIU IO Support'),
       ),
       body: ListView(
         children: [
@@ -26,7 +26,7 @@ class PiuioSupport extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  "UCS Support",
+                  "PIU IO Support",
                   style: GoogleFonts.lato(
                       fontSize: 30,
                       fontWeight: FontWeight.bold,

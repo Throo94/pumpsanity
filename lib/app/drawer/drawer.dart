@@ -23,6 +23,12 @@ import 'package:pumpsanity/app/manual/Frequently_Asked_Questions/zip_songpackage
 import 'package:pumpsanity/app/manual/Introduction/game_configuration.dart';
 import 'package:pumpsanity/app/manual/Introduction/how_to_install.dart';
 import 'package:pumpsanity/app/manual/Introduction/stepf2_conversion.dart';
+import 'package:pumpsanity/app/manual/Quest_Channel/create_a_quest_channel.dart';
+import 'package:pumpsanity/app/manual/Quest_Channel/genreal_quest.dart';
+import 'package:pumpsanity/app/manual/Quest_Channel/quest_goal.dart';
+import 'package:pumpsanity/app/manual/Quest_Channel/quest_mods.dart';
+import 'package:pumpsanity/app/manual/step_editor/division_mode.dart';
+import 'package:pumpsanity/app/manual/step_editor/editor_tricks.dart';
 import 'package:pumpsanity/app/manual/step_editor/key_shortcuts.dart';
 import 'package:pumpsanity/app/manual/step_editor/tap_note_types.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -214,11 +220,11 @@ class NavigationDrawer extends StatelessWidget {
               const SizedBox(
                 height: 7,
               ),
-              DrawerButton('Division Mode', (_) => const GroupFolders()),
+              DrawerButton('Division Mode', (_) => const DivisionMode()),
               const SizedBox(
                 height: 7,
               ),
-              DrawerButton('Editor tricks', (_) => const GroupFolders()),
+              DrawerButton('Editor tricks', (_) => const EditorTricks()),
               const SizedBox(
                 height: 7,
               ),
@@ -228,16 +234,20 @@ class NavigationDrawer extends StatelessWidget {
             title: const Text('Quest Channel'),
             leading: const Icon(Icons.mode_standby),
             children: <Widget>[
+              DrawerButton('Genreal Quest', (_) => const GeneralQuest()),
+              const SizedBox(
+                height: 7,
+              ),
               DrawerButton(
-                  'Create a Quest Channel', (_) => const GroupFolders()),
+                  'Create a Quest Channel', (_) => const CreateAQuestChannel()),
               const SizedBox(
                 height: 7,
               ),
-              DrawerButton('Quest Mods', (_) => const GroupFolders()),
+              DrawerButton('Quest Mods', (_) => const QuestMods()),
               const SizedBox(
                 height: 7,
               ),
-              DrawerButton('Quest Goal', (_) => const GroupFolders()),
+              DrawerButton('Quest Goal', (_) => const QuestGoal()),
               const SizedBox(
                 height: 7,
               ),
