@@ -234,7 +234,7 @@ class NavigationDrawer extends StatelessWidget {
             title: const Text('Quest Channel'),
             leading: const Icon(Icons.mode_standby),
             children: <Widget>[
-              DrawerButton('Genreal Quest', (_) => const GeneralQuest()),
+              DrawerButton('General Quest', (_) => const GeneralQuest()),
               const SizedBox(
                 height: 7,
               ),

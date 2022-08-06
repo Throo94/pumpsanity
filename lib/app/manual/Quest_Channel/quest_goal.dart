@@ -250,157 +250,163 @@ class QuestGoal extends StatelessWidget {
           const SizedBox(
             height: 25,
           ),
-          DataTable(columns: [
-            DataColumn(
-                label: Text(
-              'Key',
-              style: GoogleFonts.roboto(
-                fontSize: 17,
-                fontWeight: FontWeight.bold,
-              ),
-            )),
-            DataColumn(
-                label: Text(
-              'Value_Type',
-              style: GoogleFonts.roboto(
-                fontSize: 17,
-                fontWeight: FontWeight.bold,
-              ),
-            )),
-            DataColumn(
-                label: Text(
-              'Description',
-              style: GoogleFonts.roboto(
-                fontSize: 17,
-                fontWeight: FontWeight.bold,
-              ),
-            )),
-            DataColumn(
-                label: Text(
-              'Aditional_Values',
-              style: GoogleFonts.roboto(
-                fontSize: 17,
-                fontWeight: FontWeight.bold,
-              ),
-            )),
-          ], rows: const [
-            DataRow(cells: [
-              DataCell(Text('PERFECT')),
-              DataCell(Text('Numeric')),
-              DataCell(Text(
-                  'How many perfects player need to do in order to pass the quest.')),
-              DataCell(Text('> or <')),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: DataTable(columns: [
+              DataColumn(
+                  label: Text(
+                'Key',
+                style: GoogleFonts.roboto(
+                  fontSize: 17,
+                  fontWeight: FontWeight.bold,
+                ),
+              )),
+              DataColumn(
+                  label: Text(
+                'Value Type',
+                style: GoogleFonts.roboto(
+                  fontSize: 17,
+                  fontWeight: FontWeight.bold,
+                ),
+              )),
+              DataColumn(
+                  label: Text(
+                'Description',
+                style: GoogleFonts.roboto(
+                  fontSize: 17,
+                  fontWeight: FontWeight.bold,
+                ),
+              )),
+              DataColumn(
+                  label: Text(
+                'Aditional Values',
+                style: GoogleFonts.roboto(
+                  fontSize: 17,
+                  fontWeight: FontWeight.bold,
+                ),
+              )),
+            ], rows: const [
+              DataRow(cells: [
+                DataCell(Text('PERFECT')),
+                DataCell(Text('Numeric')),
+                DataCell(Text(
+                    'How many perfects player need to do in order to pass the quest.')),
+                DataCell(Text('> or <')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('GREAT')),
+                DataCell(Text('Numeric')),
+                DataCell(Text(
+                    'How many greats player need to do in order to pass the quest.')),
+                DataCell(Text('> or <')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('GOOD')),
+                DataCell(Text('Numeric')),
+                DataCell(Text(
+                    'How many good player need to do in order to pass the quest.')),
+                DataCell(Text('> or <')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('BAD')),
+                DataCell(Text('Numeric')),
+                DataCell(Text(
+                    'How many bad player need to do in order to pass the quest.')),
+                DataCell(Text('> or <')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('MISS')),
+                DataCell(Text('Numeric')),
+                DataCell(Text(
+                    'How many miss player need to do in order to pass the quest.')),
+                DataCell(Text('> or <')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('HEART')),
+                DataCell(Text('Numeric')),
+                DataCell(Text(
+                    'How many hearts player need to do in order to pass the quest.')),
+                DataCell(Text('> or <')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('POTION')),
+                DataCell(Text('Numeric')),
+                DataCell(Text(
+                    'How many potions player need to do in order to pass the quest.')),
+                DataCell(Text('> or <')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('MINE')),
+                DataCell(Text('Numeric')),
+                DataCell(Text(
+                    'How many mines player need to do in order to pass the quest.')),
+                DataCell(Text('> or <')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('ITEMS')),
+                DataCell(Text('Numeric')),
+                DataCell(Text(
+                    'How many total items player need to do in order to pass the quest.')),
+                DataCell(Text('> or <')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('VELOCITY')),
+                DataCell(Text('Numeric')),
+                DataCell(Text(
+                    'How many velocity items player need to do in order to pass the quest.')),
+                DataCell(Text('> or <')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('HIDDEN')),
+                DataCell(Text('Numeric')),
+                DataCell(Text(
+                    'How many hidden items/taps player need to do in order to pass.')),
+                DataCell(Text('> or <')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('MAXCOMBO')),
+                DataCell(Text('Numeric')),
+                DataCell(Text(
+                    'Set Max Combo player need to reach to pass the quest.')),
+                DataCell(Text('> or <')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('MISSCOMBO')),
+                DataCell(Text('Numeric')),
+                DataCell(Text(
+                    'Set Max Combo player need to reach to pass the quest.')),
+                DataCell(Text('> or <')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('LIFEBAR')),
+                DataCell(Text('Numeric/Float')),
+                DataCell(Text(
+                    'Set LifeBar player need to do to pass the quest (0 to 100).')),
+                DataCell(Text('> or <')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('SCORE')),
+                DataCell(Text('Numeric')),
+                DataCell(
+                    Text('Set Score player need to do to pass the quest.')),
+                DataCell(Text('> or <')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('GRADE')),
+                DataCell(Text('String')),
+                DataCell(
+                    Text('Set Grade player need to do to pass the quest.')),
+                DataCell(Text('Multiple Values')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('FLAG')),
+                DataCell(Text('String')),
+                DataCell(
+                    Text('Set Special Flags in ordet to pass the quest..')),
+                DataCell(Text('Multiple Values')),
+              ]),
             ]),
-            DataRow(cells: [
-              DataCell(Text('GREAT')),
-              DataCell(Text('Numeric')),
-              DataCell(Text(
-                  'How many greats player need to do in order to pass the quest.')),
-              DataCell(Text('> or <')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('GOOD')),
-              DataCell(Text('Numeric')),
-              DataCell(Text(
-                  'How many good player need to do in order to pass the quest.')),
-              DataCell(Text('> or <')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('BAD')),
-              DataCell(Text('Numeric')),
-              DataCell(Text(
-                  'How many bad player need to do in order to pass the quest.')),
-              DataCell(Text('> or <')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('MISS')),
-              DataCell(Text('Numeric')),
-              DataCell(Text(
-                  'How many miss player need to do in order to pass the quest.')),
-              DataCell(Text('> or <')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('HEART')),
-              DataCell(Text('Numeric')),
-              DataCell(Text(
-                  'How many hearts player need to do in order to pass the quest.')),
-              DataCell(Text('> or <')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('POTION')),
-              DataCell(Text('Numeric')),
-              DataCell(Text(
-                  'How many potions player need to do in order to pass the quest.')),
-              DataCell(Text('> or <')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('MINE')),
-              DataCell(Text('Numeric')),
-              DataCell(Text(
-                  'How many mines player need to do in order to pass the quest.')),
-              DataCell(Text('> or <')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('ITEMS')),
-              DataCell(Text('Numeric')),
-              DataCell(Text(
-                  'How many total items player need to do in order to pass the quest.')),
-              DataCell(Text('> or <')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('VELOCITY')),
-              DataCell(Text('Numeric')),
-              DataCell(Text(
-                  'How many velocity items player need to do in order to pass the quest.')),
-              DataCell(Text('> or <')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('HIDDEN')),
-              DataCell(Text('Numeric')),
-              DataCell(Text(
-                  'How many hidden items/taps player need to do in order to pass.')),
-              DataCell(Text('> or <')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('MAXCOMBO')),
-              DataCell(Text('Numeric')),
-              DataCell(Text(
-                  'Set Max Combo player need to reach to pass the quest.')),
-              DataCell(Text('> or <')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('MISSCOMBO')),
-              DataCell(Text('Numeric')),
-              DataCell(Text(
-                  'Set Max Combo player need to reach to pass the quest.')),
-              DataCell(Text('> or <')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('LIFEBAR')),
-              DataCell(Text('Numeric/Float')),
-              DataCell(Text(
-                  'Set LifeBar player need to do to pass the quest (0 to 100).')),
-              DataCell(Text('> or <')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('SCORE')),
-              DataCell(Text('Numeric')),
-              DataCell(Text('Set Score player need to do to pass the quest.')),
-              DataCell(Text('> or <')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('GRADE')),
-              DataCell(Text('String')),
-              DataCell(Text('Set Grade player need to do to pass the quest.')),
-              DataCell(Text('Multiple Values')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('FLAG')),
-              DataCell(Text('String')),
-              DataCell(Text('Set Special Flags in ordet to pass the quest..')),
-              DataCell(Text('Multiple Values')),
-            ]),
-          ]),
+          ),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Align(
@@ -750,74 +756,77 @@ class QuestGoal extends StatelessWidget {
               ),
             ),
           ),
-          DataTable(columns: [
-            DataColumn(
-                label: Text(
-              'Command',
-              style: GoogleFonts.roboto(
-                fontSize: 17,
-                fontWeight: FontWeight.bold,
-              ),
-            )),
-            DataColumn(
-                label: Text(
-              'Result_Description',
-              style: GoogleFonts.roboto(
-                fontSize: 17,
-                fontWeight: FontWeight.bold,
-              ),
-            )),
-          ], rows: const [
-            DataRow(cells: [
-              DataCell(Text('GetTapNoteScores("TapNoteScore")')),
-              DataCell(Text(
-                  'Get Total Score from specified TapNote (see table below)')),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: DataTable(columns: [
+              DataColumn(
+                  label: Text(
+                'Command',
+                style: GoogleFonts.roboto(
+                  fontSize: 17,
+                  fontWeight: FontWeight.bold,
+                ),
+              )),
+              DataColumn(
+                  label: Text(
+                'Result Description',
+                style: GoogleFonts.roboto(
+                  fontSize: 17,
+                  fontWeight: FontWeight.bold,
+                ),
+              )),
+            ], rows: const [
+              DataRow(cells: [
+                DataCell(Text('GetTapNoteScores("TapNoteScore")')),
+                DataCell(Text(
+                    'Get Total Score from specified TapNote (see table below)')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('MaxCombo()')),
+                DataCell(Text('	Get Max Combo')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('MaxMissCombo()')),
+                DataCell(Text('	Get Max Miss Combo')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('GetCurrentLife()')),
+                DataCell(Text('Get Current Life value from LifeBar')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('GetScore()')),
+                DataCell(Text('Get Score')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('GetGrade()')),
+                DataCell(Text('Get Grade (see table below)')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('GetScore()')),
+                DataCell(Text('Get Score')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('MaxComboSkin("NoteSkin Value")')),
+                DataCell(Text(
+                    'Get Max Combo from specified NoteSkin (see table below)')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('MaxMissComboSkin("NoteSkin Value")')),
+                DataCell(Text(
+                    'Get Max Miss Combo from specified NoteSkin (see table below)')),
+              ]),
+              DataRow(cells: [
+                DataCell(
+                    Text('GetTapNoteSkin("NoteSkin Value", "TapNoteScore")')),
+                DataCell(Text(
+                    'Get Max Miss Combo from specified NoteSkin (see table below)')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('GetFailedAux()')),
+                DataCell(Text('If user got LifeBar 0 or Stagebreak')),
+              ]),
             ]),
-            DataRow(cells: [
-              DataCell(Text('MaxCombo()')),
-              DataCell(Text('	Get Max Combo')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('MaxMissCombo()')),
-              DataCell(Text('	Get Max Miss Combo')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('GetCurrentLife()')),
-              DataCell(Text('Get Current Life value from LifeBar')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('GetScore()')),
-              DataCell(Text('Get Score')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('GetGrade()')),
-              DataCell(Text('Get Grade (see table below)')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('GetScore()')),
-              DataCell(Text('Get Score')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('MaxComboSkin("NoteSkin Value")')),
-              DataCell(Text(
-                  'Get Max Combo from specified NoteSkin (see table below)')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('MaxMissComboSkin("NoteSkin Value")')),
-              DataCell(Text(
-                  'Get Max Miss Combo from specified NoteSkin (see table below)')),
-            ]),
-            DataRow(cells: [
-              DataCell(
-                  Text('GetTapNoteSkin("NoteSkin Value", "TapNoteScore")')),
-              DataCell(Text(
-                  'Get Max Miss Combo from specified NoteSkin (see table below)')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('GetFailedAux()')),
-              DataCell(Text('If user got LifeBar 0 or Stagebreak')),
-            ]),
-          ]),
+          ),
           const Padding(
             padding: EdgeInsets.all(8.0),
             child: Align(
@@ -837,79 +846,82 @@ class QuestGoal extends StatelessWidget {
               ),
             ),
           ),
-          DataTable(
-            columns: [
-              DataColumn(
-                  label: Text(
-                'TapNoteScore_Value',
-                style: GoogleFonts.roboto(
-                  fontSize: 17,
-                  fontWeight: FontWeight.bold,
-                ),
-              )),
-              DataColumn(
-                  label: Text(
-                'Description',
-                style: GoogleFonts.roboto(
-                  fontSize: 17,
-                  fontWeight: FontWeight.bold,
-                ),
-              )),
-            ],
-            rows: const [
-              DataRow(cells: [
-                DataCell(Text('TapNoteScore_W1')),
-                DataCell(Text('Perfect Taps')),
-              ]),
-              DataRow(cells: [
-                DataCell(Text('TapNoteScore_W2')),
-                DataCell(Text('Perfect Taps')),
-              ]),
-              DataRow(cells: [
-                DataCell(Text('TapNoteScore_CheckpointHit')),
-                DataCell(Text('Perfect Hold')),
-              ]),
-              DataRow(cells: [
-                DataCell(Text('TapNoteScore_W3')),
-                DataCell(Text('Great Taps')),
-              ]),
-              DataRow(cells: [
-                DataCell(Text('TapNoteScore_W4')),
-                DataCell(Text('Good Taps')),
-              ]),
-              DataRow(cells: [
-                DataCell(Text('TapNoteScore_W5')),
-                DataCell(Text('Bad Taps')),
-              ]),
-              DataRow(cells: [
-                DataCell(Text('TapNoteScore_Miss')),
-                DataCell(Text('Miss Taps')),
-              ]),
-              DataRow(cells: [
-                DataCell(Text('TapNoteScore_CheckpointMiss')),
-                DataCell(Text('Miss Holds')),
-              ]),
-              DataRow(cells: [
-                DataCell(Text('TapNoteScore_Heart')),
-                DataCell(Text('Heart Taps')),
-              ]),
-              DataRow(cells: [
-                DataCell(Text('TapNoteScore_Potion')),
-                DataCell(Text('Potion Taps')),
-              ]),
-              DataRow(cells: [
-                DataCell(Text('TapNoteScore_HitMine')),
-                DataCell(Text('Mine Taps')),
-              ]),
-              DataRow(cells: [
-                DataCell(Text('TapNoteScore_Velocity')),
-                DataCell(Text('Velocity Item Taps')),
-              ]),
-              DataRow(cells: [
-                DataCell(Text('TapNoteScore_Item')),
-                DataCell(Text('Total Item Taps')),
-              ]),
-            ],
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: DataTable(
+              columns: [
+                DataColumn(
+                    label: Text(
+                  'TapNoteScore Value',
+                  style: GoogleFonts.roboto(
+                    fontSize: 17,
+                    fontWeight: FontWeight.bold,
+                  ),
+                )),
+                DataColumn(
+                    label: Text(
+                  'Description',
+                  style: GoogleFonts.roboto(
+                    fontSize: 17,
+                    fontWeight: FontWeight.bold,
+                  ),
+                )),
+              ],
+              rows: const [
+                DataRow(cells: [
+                  DataCell(Text('TapNoteScore_W1')),
+                  DataCell(Text('Perfect Taps')),
+                ]),
+                DataRow(cells: [
+                  DataCell(Text('TapNoteScore_W2')),
+                  DataCell(Text('Perfect Taps')),
+                ]),
+                DataRow(cells: [
+                  DataCell(Text('TapNoteScore_CheckpointHit')),
+                  DataCell(Text('Perfect Hold')),
+                ]),
+                DataRow(cells: [
+                  DataCell(Text('TapNoteScore_W3')),
+                  DataCell(Text('Great Taps')),
+                ]),
+                DataRow(cells: [
+                  DataCell(Text('TapNoteScore_W4')),
+                  DataCell(Text('Good Taps')),
+                ]),
+                DataRow(cells: [
+                  DataCell(Text('TapNoteScore_W5')),
+                  DataCell(Text('Bad Taps')),
+                ]),
+                DataRow(cells: [
+                  DataCell(Text('TapNoteScore_Miss')),
+                  DataCell(Text('Miss Taps')),
+                ]),
+                DataRow(cells: [
+                  DataCell(Text('TapNoteScore_CheckpointMiss')),
+                  DataCell(Text('Miss Holds')),
+                ]),
+                DataRow(cells: [
+                  DataCell(Text('TapNoteScore_Heart')),
+                  DataCell(Text('Heart Taps')),
+                ]),
+                DataRow(cells: [
+                  DataCell(Text('TapNoteScore_Potion')),
+                  DataCell(Text('Potion Taps')),
+                ]),
+                DataRow(cells: [
+                  DataCell(Text('TapNoteScore_HitMine')),
+                  DataCell(Text('Mine Taps')),
+                ]),
+                DataRow(cells: [
+                  DataCell(Text('TapNoteScore_Velocity')),
+                  DataCell(Text('Velocity Item Taps')),
+                ]),
+                DataRow(cells: [
+                  DataCell(Text('TapNoteScore_Item')),
+                  DataCell(Text('Total Item Taps')),
+                ]),
+              ],
+            ),
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -1458,57 +1470,60 @@ class QuestGoal extends StatelessWidget {
               ),
             ),
           ),
-          DataTable(columns: [
-            DataColumn(
-                label: Text(
-              'Grade_Return',
-              style: GoogleFonts.roboto(
-                fontSize: 17,
-                fontWeight: FontWeight.bold,
-              ),
-            )),
-            DataColumn(
-                label: Text(
-              'Grade_Description',
-              style: GoogleFonts.roboto(
-                fontSize: 17,
-                fontWeight: FontWeight.bold,
-              ),
-            )),
-          ], rows: const [
-            DataRow(cells: [
-              DataCell(Text('Grade_Tier1')),
-              DataCell(Text('SSS Gold Grade')),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: DataTable(columns: [
+              DataColumn(
+                  label: Text(
+                'Grade Return',
+                style: GoogleFonts.roboto(
+                  fontSize: 17,
+                  fontWeight: FontWeight.bold,
+                ),
+              )),
+              DataColumn(
+                  label: Text(
+                'Grade Description',
+                style: GoogleFonts.roboto(
+                  fontSize: 17,
+                  fontWeight: FontWeight.bold,
+                ),
+              )),
+            ], rows: const [
+              DataRow(cells: [
+                DataCell(Text('Grade_Tier1')),
+                DataCell(Text('SSS Gold Grade')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('Grade_Tier2')),
+                DataCell(Text('SS Gold Grade')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('Grade_Tier3')),
+                DataCell(Text('S Gold Grade')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('Grade_Tier4')),
+                DataCell(Text('A Grade')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('Grade_Tier5')),
+                DataCell(Text('B Grade')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('Grade_Tier6')),
+                DataCell(Text('C Grade')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('Grade_Tier7')),
+                DataCell(Text('D Grade')),
+              ]),
+              DataRow(cells: [
+                DataCell(Text('Grade_Tier8')),
+                DataCell(Text('F Grade')),
+              ]),
             ]),
-            DataRow(cells: [
-              DataCell(Text('Grade_Tier2')),
-              DataCell(Text('SS Gold Grade')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('Grade_Tier3')),
-              DataCell(Text('S Gold Grade')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('Grade_Tier4')),
-              DataCell(Text('A Grade')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('Grade_Tier5')),
-              DataCell(Text('B Grade')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('Grade_Tier6')),
-              DataCell(Text('C Grade')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('Grade_Tier7')),
-              DataCell(Text('D Grade')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('Grade_Tier8')),
-              DataCell(Text('F Grade')),
-            ]),
-          ]),
+          ),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Align(
