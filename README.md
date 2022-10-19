@@ -1,6 +1,6 @@
 # pumpsanity
 
-A new Flutter project.
+The PumpSanity app that allows you to check the ranking, report bugs, etc.
 
 ## Getting Started
 
